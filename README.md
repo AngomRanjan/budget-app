@@ -49,6 +49,7 @@ Contributions, [issues](https://github.com/AngomRanjan/budget-app/issues), and f
 ### Acknowledgments
 - Thanks to the Microverse team for the great curriculum 🙌.
 - Thanks to Code Reviewers for the insightful feedback ⚡💘.
+- Gregoire Vella on Behance for Original design idea.
 - My Family.
 - All my fellow micronauts.
 
