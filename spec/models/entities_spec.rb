@@ -12,7 +12,6 @@ RSpec.describe Entity, type: :model do
     @user.delete
   end
 
-
   describe 'Validations' do
     it 'should be valid' do
       expect(@entity).to be_valid

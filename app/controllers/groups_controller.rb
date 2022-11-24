@@ -1,4 +1,7 @@
 class GroupsController < ApplicationController
+  before_action :set_category, only: %i[show edit update destroy]
+  before_action :authenticate_user!, except: [:public]
+
   def index
     @groups = Group.where(user_id: current_user.id)
   end
