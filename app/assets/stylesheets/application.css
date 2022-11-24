@@ -66,3 +66,9 @@ a {
   --bs-btn-hover-bg: var(--color-var3);
   --bs-btn-hover-color: var(--color-pri);
 }
+
+.back_btn img {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+}

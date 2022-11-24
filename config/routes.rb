@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   get "splashes/index"
 
-  resources :categories
-  resources :expenses
+  resources :groups
+  resources :entities
 
   unauthenticated do
     root "splashes#index"
