@@ -1,24 +1,58 @@
-# README
+[![](https://img.shields.io/badge/Micronaut-Angom%20Chittaranjan-blue)](https://github.com/AngomRanjan)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Budget app
+  - This Budget App is a ruby on rails Capstone.
 
-Things you may want to cover:
+## Built with
+  - Ruby on Rails
+  - Vs Code
+  - Postgresql
 
-* Ruby version
+## Pre-requsite
+- Ruby
+- VS Code
+- Postgresql
+- Rails
 
-* System dependencies
+## Getting Started
+ To get a local copy of this project:
+  1. Clone the repository (https://github.com/AngomRanjan/budget-app)
+  2. Change the directory to the cloned repo using cd command
+  3. Open your terminal and run rails server
+  4. This will open the project in the browser
+ That's it! You can play with it as you wish 😄
 
-* Configuration
+### Authors
 
-* Database creation
+#### 👤 Angom Chittaranjan
 
-* Database initialization
+- GitHub: [@AngomRanjan](https://github.com/AngomRanjan)
+- Twitter: [@RanjanAngom](https://twitter.com/RanjanAngom)
+- LinkedIn: [angom-chittaranjan](https://linkedin.com/in/angom-chittaranjan)
 
-* How to run the test suite
+### Show your support
+Give a ⭐️(../../stargazers) if you like this project!
 
-* Services (job queues, cache servers, search engines, etc.)
+### 🤝 Contributing
+Contributions, [issues](https://github.com/AngomRanjan/budget-app/issues), and feature requests are welcome! Feel free to check the issues page.
 
-* Deployment instructions
+## :footprints: Track Me
 
-* ...
+<a href="https://twitter.com/RanjanAngom?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">
+<img src="https://img.shields.io/badge/-@RanjanAngom-blue?style=flat&logo=twitter&logoColor=white">
+</a>
+
+<a class="github-button" href="https://github.com/AngomRanjan" aria-label="Follow @AngomRanjan on GitHub">
+ <img src="https://img.shields.io/badge/-@AngomRanjan-green?style=flat&logo=github&logoColor=white">
+</a>
+
+### Acknowledgments
+- Thanks to the Microverse team for the great curriculum 🙌.
+- Thanks to Code Reviewers for the insightful feedback ⚡💘.
+- Gregoire Vella on Behance for Original design idea.
+- My Family.
+- All my fellow micronauts.
+
+## 📝 License
+
+This project is [MIT](LICENSE) licensed.
