@@ -3,11 +3,11 @@ class GroupsController < ApplicationController
   before_action :authenticate_user!, except: [:public]
 
   def index
-    @groups = Group.where(user_id: current_user.id)
+    @groups = Group.where(user_id: current_user.id).order('id DESC')
   end
 
   def show
-    @entities = Entity.all.where(group_id: @group.id)
+    @entities = Entity.all.where(group_id: @group.id).order('id DESC')
   end
 
   def new
