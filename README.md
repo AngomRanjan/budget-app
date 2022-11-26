@@ -1,26 +1,40 @@
 [![](https://img.shields.io/badge/Micronaut-Angom%20Chittaranjan-blue)](https://github.com/AngomRanjan)
 
-## Budget app
-  - This Budget App is a ruby on rails Capstone.
+## BudgetScan
+  BudgetScan is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
 ## Built with
-  - Ruby on Rails
-  - Vs Code
+  - Ruby
+  - Rails
+  - VS Code
   - Postgresql
+  - Rspec
 
 ## Pre-requsite
-- Ruby
-- VS Code
-- Postgresql
-- Rails
+  - Ruby
+  - Rails
+  - VS Code
+  - Postgresql
+  - Rspec 
 
 ## Getting Started
- To get a local copy of this project:
-  1. Clone the repository (https://github.com/AngomRanjan/budget-app)
-  2. Change the directory to the cloned repo using cd command
-  3. Open your terminal and run rails server
-  4. This will open the project in the browser
+ To get a local copy of this project, open your terminal and type:
+  - git clone https://github.com/AngomRanjan/budget-app
+  - cd budget-app
+  - bundle install
+  - rails db:create
+  - rails db:migrate
+  - rails server
+ Open your browser and goto http://127.0.0.1:3000 or http://localhost:3000 
  That's it! You can play with it as you wish 😄
+
+### Live Demo
+
+- [BudgetScan](https://afternoon-savannah-28512.herokuapp.com/)
+
+### Presentation
+
+- [Video](https://drive.google.com/file/d/1QnITmrBLDWJwJGZ3B2_5I9ASuoZjf_SP/view?usp=sharing)
 
 ### Authors
 
@@ -47,6 +61,7 @@ Contributions, [issues](https://github.com/AngomRanjan/budget-app/issues), and f
 </a>
 
 ### Acknowledgments
+
 - Thanks to the Microverse team for the great curriculum 🙌.
 - Thanks to Code Reviewers for the insightful feedback ⚡💘.
 - Gregoire Vella on Behance for Original design idea.
