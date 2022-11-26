@@ -1,12 +1,6 @@
 
 <section class="text-center vh-100">
-    <div class="bg__prime d-flex align-items-center justify-content-between px-4 sticky-top">
-        <div>
-            <%= render "shared/navbar" %>
-        </div>
-        <%= link_to "Add New Category", new_group_path, class: "right__link text-white" %>
-    </div>
-   
+    <%= render "shared/header", page_title: "Transactions" %>   
 
     <% if flash.notice %>
         <p class="notice"><%= notice %></p>
@@ -22,10 +16,5 @@
         <% end %>            
     </div>
 
-    <div class="bg__sec fixed-bottom p-3">        
-        <% if user_signed_in? %> 
-           <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "text-white" %>
-        <% end %>
-    </div>
-       
+    <%= render "shared/footer", link_text: "Add a new category", link_url: new_group_path %>
 </section>

@@ -1,28 +1,26 @@
 <section class="text-center vh-100">
-    <div class="bg__prime d-flex align-items-center justify-content-between p-3">
-    <%= link_to :back do %>
-        <i class="fa fa-arrow-left text-white"></i>
-    <%end%>
-    <h4 class="text-white">Transactions</h4>      
-    </div>
+    <%= render "shared/header2", page_title: "Details" %>
 
     <% if flash[:notice] %>
         <p class="notice" role="alert"><%= notice %></p>
     <% end %>
     <%= render @group %>
+    <div class="card m-3 rounded pe-4">
     <% @entities.each do |entity| %>
-        <div class="card m-3 rounded">
-            <div class="h4 py-2"><%= entity.name.capitalize %></div>
-            <p>$<%= entity.amount %></p>
-        </div>
-        
+            <div class="container-fluid mx-2 px-2 bg-white border-bottom">
+                <p class="px-3 pt-2 d-flex justify-content-left fw-bold"><%= entity.name.capitalize %></p>
+                <p class="px-3 pb-1 mb-0 d-flex justify-content-left">Transactionº<%= entity.created_at.to_time.to_i %></p>
+                <p class="px-3 pb-1 mb-0 d-flex justify-content-left"><span class="fa fa-calendar"></span> <span class="mx-1"><%= entity.created_at %></span></p>
+            </div>
+            <div class="container-fluid mx-2 px-2 bg-white border-bottom">
+                <p class="px-4 py-2 m-0 d-flex justify-content-between">
+                    <strong>Amount:</strong>
+                    $<%= entity.amount %>
+                </p>
+            </div>        
     <% end %>
-
-    <div class="bg__sec fixed-bottom py-3">        
-        <%= link_to "Add Expense", new_entity_path, class: "btn btn-primary" %>        
-        <% if user_signed_in? %> 
-           <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "btn btn-primary" %>
-        <% end %>
     </div>
+
+    <%= render "shared/footer", link_text: "Add new expense", link_url: new_entity_path %>
 </section>
 
