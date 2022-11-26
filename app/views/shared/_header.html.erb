@@ -1,0 +1,20 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark m-0 p-0">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#" >Home</a></li>
+                <li class="nav-item">
+                    <% if user_signed_in? %> 
+                        <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link" %>
+                    <% end %>
+                </li>
+            </ul>        
+        </div>
+    </nav>
+    <p class="text-uppercase justify-content-center"><%=page_title%></p>
+    <div class="justify-content-end pe-3"><i class="fa fa-search"></i></div>
+</header>
