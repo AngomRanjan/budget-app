@@ -6,6 +6,7 @@
     <% end %>
     <%= render @group %>
     <div class="card m-3 rounded pe-4">
+    <% if @entities.any?%>
     <% @entities.each do |entity| %>
             <div class="container-fluid mx-2 px-2 bg-white border-bottom">
                 <p class="px-3 pt-2 d-flex justify-content-left fw-bold"><%= entity.name.capitalize %></p>
@@ -19,6 +20,9 @@
                 </p>
             </div>        
     <% end %>
+    <% else %>
+            <p class="p-2 m-2 h3">No Records Found!</p>
+    <% end %> 
     </div>
 
     <%= render "shared/footer", link_text: "Add new expense", link_url: new_entity_path %>
