@@ -1,0 +1,30 @@
+<section class="text-center vh-100">
+    <%= render "shared/header2", page_title: "Details" %>
+
+    <% if flash[:notice] %>
+        <p class="notice" role="alert"><%= notice %></p>
+    <% end %>
+    <%= render @group %>
+    <div class="card m-3 rounded pe-4">
+    <% if @entities.any?%>
+    <% @entities.each do |entity| %>
+            <div class="container-fluid mx-2 px-2 bg-white border-bottom">
+                <p class="px-3 pt-2 d-flex justify-content-left fw-bold"><%= entity.name.capitalize %></p>
+                <p class="px-3 pb-1 mb-0 d-flex justify-content-left">Transactionº<%= entity.created_at.to_time.to_i %></p>
+                <p class="px-3 pb-1 mb-0 d-flex justify-content-left"><span class="fa fa-calendar"></span> <span class="mx-1"><%= entity.created_at %></span></p>
+            </div>
+            <div class="container-fluid mx-2 px-2 bg-white border-bottom">
+                <p class="px-4 py-2 m-0 d-flex justify-content-between">
+                    <strong>Amount:</strong>
+                    $<%= entity.amount %>
+                </p>
+            </div>        
+    <% end %>
+    <% else %>
+            <p class="p-2 m-2 h3">No Records Found!</p>
+    <% end %> 
+    </div>
+
+    <%= render "shared/footer", link_text: "Add new expense", link_url: new_entity_path %>
+</section>
+

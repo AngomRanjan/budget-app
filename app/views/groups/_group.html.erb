@@ -1,0 +1,17 @@
+<div class="row card m-3 ps-1 pe-3 rounded">
+  <div class="col-sm-4 m-0 p-0 d-flex align-items-center justify-content-center w-100">
+    <p class=""> <%= image_tag group.icon, class:"group___icons"%></p>
+  </div>
+  <div class="col-sm-8 d-flex justify-content-between w-100 m-0 p-0">      
+    <ul class="d-flex flex-column align-items-start justify-content-start">
+      <li> <h4 class="py-2"><%= link_to group.name, group_path(group), class: "def__txtColor text-uppercase" %></h4></li>
+      <li> <p> <%= group.created_at.strftime("%d-%b-%Y")%></p></li>
+    </ul>
+    <ul class="d-flex flex-column justify-content-start m-0 p-0">
+      <li><p class="py-2 text-center fw-bold text-uppercase">Total : $<%= total_amount_helper(Entity.all.where(group_id:group.id)) %></p></li>      
+    </ul>
+  </div>
+</div>
+
+ 
+  
