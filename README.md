@@ -30,7 +30,7 @@
 
 ### Live Demo
 
-- [BudgetScan](https://afternoon-savannah-28512.herokuapp.com/)
+- [BudgetScan](https://budgetscan.onrender.com/)
 
 ### Presentation
 
